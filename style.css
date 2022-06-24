@@ -1,0 +1,374 @@
+*{
+    color: gray;
+    scroll-behavior: smooth;
+    letter-spacing: 1.5px;
+    font: 18px Roboto, Arial, sans-serif;
+    color: #747474
+    
+}
+body{
+    margin: 0;
+}
+
+/** head **/
+header  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 5px 2px -2px rgb(221, 214, 214);
+    background-color: white;
+}
+ul {
+    display: flex;
+    align-items: center;
+    padding-left:15px;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: inherit;
+    padding: 15px;
+
+}
+
+a:active{
+    color: #00B39B;
+border-bottom: 0.2rem solid #00B39B;
+}
+
+img {
+   margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
+
+/*About 1*/
+.about-1{
+margin: 30px 150px;
+}
+@media screen and (max-width: 1200px){
+    .about-1 {
+            margin: 2.0625rem auto 3.75rem;
+        }
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-h1{
+    margin:10px auto 40px auto;
+    color: #00B39B;
+    font-size: 24px;
+    padding-top: 20px;
+}
+.paragraphs{
+    display: flex;
+}
+.parag{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.parag-1{
+    margin-right:10px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .paragraphs {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+        .title-img{
+            display: none;
+        }
+        .title-h1{
+            margin: 20px;
+            text-align: center;
+        }
+
+}
+/**carts**/
+
+.cartes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width:600px) {
+    .cartes {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+}
+
+.carte {
+    padding: 30px 30px;
+    background-color: #00ccb1;
+    border-radius: 10%;
+    margin: 25px;
+    margin: 25px;
+}
+
+.carte h3 , .carte p , .carte i {
+font-size: 20px;
+    color: rgb(244, 246, 248);
+}
+.carte p{
+    font: 24px "Work Sans", Arial, sans-serif ;
+    font-weight: 300;
+}
+
+ .c2{
+background-color: #3d83df;
+}
+
+.c3{
+    background-color: #1b2734;
+}
+
+.dropdown {
+    float: left;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.global-h1{
+    color: rgb(105, 223, 150);
+    padding-right: 50px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+.global{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.global-c{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+}
+@media screen and (max-width: 600px) {
+   .global{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+     text-align: center;
+   }
+.global-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ; 
+    grid-gap: 10px;
+
+}
+}
+/*world*/
+.about-2{
+    background: #e5faf8;
+    background-image: linear-gradient(-45deg, rgba(0, 204, 177, .01) 5%, rgba(61, 199, 223, .1));
+}
+.world{
+    margin: 30px 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.world-h1{
+    margin-top:40px ;
+    color: #00B39B;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.world-img{
+
+    width: 120%;
+    bottom: 0;
+    left: -100px;
+}
+
+.world-v{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.world-vs{
+    padding: 40px 30px;
+    background-color: white;
+    margin: 20px 20px;
+    border-radius: 10%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.world-vs p{
+    font-size: 12px;
+}
+
+.world-vs h2 , .world-vs i{
+    color: #00B39B;
+    text-align: center;
+  }
+  .world-v-r{
+    margin-top: 50px;
+  }
+
+@media screen and (max-width: 600px) {
+    .world {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    .world-img {
+            display: none;
+                }
+    .world-h {
+        text-align: center;
+    }
+}
+  /*improve*/
+
+  .improve{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .improve-h1 , .improve-p{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+   .improve-h1{
+    font-size: 20px;
+    color: #00B39B;
+   }
+
+   .improve-p {
+    font-size: 15px;
+   }
+
+   .imprive-s{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 30px 150px;
+
+   }
+
+   .improve-cs{
+    cursor: pointer;
+   }
+
+   .improve-c{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   .improve-c h5{
+    font-size: 10px;
+    padding: 5px;
+    background-color: #3d83df;
+    color: white;
+    border-radius: 5%;
+   }
+
+ @media screen and (max-width: 1000px) {
+    .improve{
+        margin: 20px;
+    }
+        .improve-h1,
+        .improve-p {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .imprive-s {
+             margin: 20px;
+         }
+}
+@media screen and (max-width: 600px) {
+        .imprive-s {
+            display: flex;
+            flex-direction: row;
+overflow-x: scroll;
+
+}
+.improve-cs{
+    margin-left: 5px;
+}
+}
+
+
+/*footer*/
+footer{
+    border-top: 1px solid rgb(199, 193, 193);
+    text-align: center;
+margin-bottom: 50px;
+}
+footer p{
+    font-size: 10px;
+
+}
